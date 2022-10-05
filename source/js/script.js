@@ -79,6 +79,7 @@
 
 // oddEvenNumber(12356);
 
+// 1) Count result and variables values
 let a = 10,
     b = 20,
     c = 30;
@@ -94,3 +95,24 @@ let resultThree= a++ - (--b - c++);
             // 11 - (19 - 32) = 11 - -13 = 24 
             // a =  12, b = 19, c=33
 console.log(resultThree);
+
+// 2) Спросить у пользователя интервал чисел в пределах от 0 до 100, и вывести квадрат этих чисел  в консоль , которые деляться на 3.
+// Если ввели не число, то попросить ввести число. 
+
+const firstRangeValue = +prompt('Enter first value from 0 to 100');
+const secondRangeValue = +prompt('Enter second value from 0 to 100');
+if  (firstRangeValue < 0 || firstRangeValue > 100 ||
+    secondRangeValue < 0 || secondRangeValue > 100) {
+    alert('Enter correct value from 0 to 100');
+} else if (isNaN(firstRangeValue) || isNaN(secondRangeValue)) {
+    alert('You should enter number');
+} else {
+    for(let i = firstRangeValue; i<= secondRangeValue; i++) {
+        if((Math.pow(i, 2) % 3 !== 0)) {
+            continue;
+        } else {
+            console.log((Math.pow(i, 2) / 3));
+        }
+        
+    }
+}
