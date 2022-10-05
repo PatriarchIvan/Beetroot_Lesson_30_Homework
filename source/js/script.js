@@ -113,6 +113,18 @@ if  (firstRangeValue < 0 || firstRangeValue > 100 ||
         } else {
             console.log((Math.pow(i, 2) / 3));
         }
-        
     }
 }
+
+
+// 3) Перепишите код, заменив цикл FOR на WHILE, без изменения поведения цикла.
+// for(let i = 0 ; i  <=8; i++) {
+//     console.log(i);
+// }
+
+let i = 0;
+while (i<= 8){
+    console.log(i);
+    i++;
+}
+
