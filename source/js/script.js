@@ -48,20 +48,6 @@
 // }
 // alert(`Result of summing in this range: ${sum} `);
 
-// 4) Ask user two numbers and find greatest common divisor
-// let firstNum = Math.abs(+prompt('Enter first value'));
-// let secondNum = Math.abs(+prompt('Enter second value'));
-
-// if (firstNum == secondNum) {
-//     alert(`Greatest common divisor = ${firstNum}`);
-// } else if (firstNum < secondNum) {
-//     secondNum = firstNum % secondNum;
-//     alert(`Greatest common divisor = ${secondNum}`);
-// } else if (isNaN(firstNum) || isNaN(secondNum)) {
-//     alert('Enter correct values');
-// }
-
-
 // function oddEvenNumber(num) {
 //     const arr = String(num).split('');
 //     let odd = 0;
@@ -79,59 +65,59 @@
 
 // oddEvenNumber(12356);
 
-// // 1) Count result and variables values
-// let a = 10,
-//     b = 20,
-//     c = 30;
-//     let resultOne = a++ - --b - c++;
-//                 // 10 - 20-1 - 30 = -39 
-//                 // a = 11, b = 19, c=31
-// console.log(resultOne);
-// let resultTwo = a + b++ - ++c;
-//             // 11 + 19 - 32 = -2 
-//             // a = 11, b = 20, c=32
-// console.log(resultTwo);
-// let resultThree= a++ - (--b - c++);
-//             // 11 - (19 - 32) = 11 - -13 = 24 
-//             // a =  12, b = 19, c=33
-// console.log(resultThree);
+// 1) Count result and variables values
+let a = 10,
+    b = 20,
+    c = 30;
+    let resultOne = a++ - --b - c++;
+                // 10 - 20-1 - 30 = -39 
+                // a = 11, b = 19, c=31
+console.log(resultOne);
+let resultTwo = a + b++ - ++c;
+            // 11 + 19 - 32 = -2 
+            // a = 11, b = 20, c=32
+console.log(resultTwo);
+let resultThree= a++ - (--b - c++);
+            // 11 - (19 - 32) = 11 - -13 = 24 
+            // a =  12, b = 19, c=33
+console.log(resultThree);
 
-// // 2) Спросить у пользователя интервал чисел в пределах от 0 до 100, 
-// // и вывести квадрат этих чисел  в консоль , которые деляться на 3.
-// // Если ввели не число, то попросить ввести число. 
+// 2) Спросить у пользователя интервал чисел в пределах от 0 до 100, 
+// и вывести квадрат этих чисел  в консоль , которые деляться на 3.
+// Если ввели не число, то попросить ввести число. 
 
-// const firstRangeValue = +prompt('Enter first value from 0 to 100');
-// const secondRangeValue = +prompt('Enter second value from 0 to 100');
-// if  (firstRangeValue < 0 || firstRangeValue > 100 ||
-//     secondRangeValue < 0 || secondRangeValue > 100) {
-//     alert('Enter correct value from 0 to 100');
-// } else if (isNaN(firstRangeValue) || isNaN(secondRangeValue)) {
-//     alert('You should enter number');
-// } else {
-//     for(let i = firstRangeValue; i<= secondRangeValue; i++) {
-//         if((Math.pow(i, 2) % 3 !== 0)) {
-//             continue;
-//         } else {
-//             console.log((Math.pow(i, 2) / 3));
-//         }
-//     }
-// }
+const firstRangeValue = +prompt('Enter first value from 0 to 100');
+const secondRangeValue = +prompt('Enter second value from 0 to 100');
+if  (firstRangeValue < 0 || firstRangeValue > 100 ||
+    secondRangeValue < 0 || secondRangeValue > 100) {
+    alert('Enter correct value from 0 to 100');
+} else if (isNaN(firstRangeValue) || isNaN(secondRangeValue)) {
+    alert('You should enter number');
+} else {
+    for(let i = firstRangeValue; i<= secondRangeValue; i++) {
+        if((Math.pow(i, 2) % 3 !== 0)) {
+            continue;
+        } else {
+            console.log((Math.pow(i, 2) / 3));
+        }
+    }
+}
 
 
-// // 3) Перепишите код, заменив цикл FOR на WHILE, без изменения поведения цикла.
-// // for(let i = 0 ; i  <=8; i++) {
-// //     console.log(i);
-// // }
-
-// let i = 0;
-// while (i<= 8){
+// 3) Перепишите код, заменив цикл FOR на WHILE, без изменения поведения цикла.
+// for(let i = 0 ; i  <=8; i++) {
 //     console.log(i);
-//     i++;
 // }
 
-// // 4) Спросить у пользователя интервал чисел в пределах от 1 до 30, 
-// // и вывести в консоль простые числа в указанном интервале.
-// // Например  клиент ввёл 2 и 10 , в консоль должно вывести  2, 3, 5, 7
+let i = 0;
+while (i<= 8){
+    console.log(i);
+    i++;
+}
+
+// 4) Спросить у пользователя интервал чисел в пределах от 1 до 30, 
+// и вывести в консоль простые числа в указанном интервале.
+// Например  клиент ввёл 2 и 10 , в консоль должно вывести  2, 3, 5, 7
 
 const primeValueFirst = prompt('Enter first value from 1 to 30');
 const primeValueSecond = prompt('Enter second value  from 1 to 30');
