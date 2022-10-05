@@ -1,0 +1,96 @@
+//MINIMUM
+// 1) Ask age
+// const age = +prompt('How old are you?', '');
+// if (age >= 0 && age <= 11) {
+//     alert('Hello, kid!');
+// } else if (age >= 12 && age <= 17) {
+//     alert ('Hello, teenager!');
+// } else if (age >= 18 && age <= 59) {
+//     alert ('Hello, adult!');
+// } else if (age >= 60 && age <= 100) {
+//     alert ('Hello, granpa!');
+// } else {
+//     alert ('Something wrong...');
+// }
+
+// 2) Special symnbols
+// const number = +prompt('Enter number to have symbol of it\'s button', '');
+// switch(number) {
+//     case 0: alert (')');
+//     break;
+//     case 1: alert ('!');
+//     break;
+//     case 2: alert ('@');
+//     break;
+//     case 3: alert ('#');
+//     break;
+//     case 4: alert ('$');
+//     break;
+//     case 5: alert ('%');
+//     break;
+//     case 6: alert ('^');
+//     break;
+//     case 7: alert ('&');
+//     break;
+//     case 8: alert ('*');
+//     break;
+//     case 9: alert ('(');
+//     break;
+//     default: alert ('You should enter a number from 0 to 9...');
+// }
+
+// 3) Count value in range
+// const numberOne = +prompt('Enter first value');
+// const numberTwo = +prompt('Enter second value');
+// let sum = 0;
+// for (let i=numberOne; i <= numberTwo; i++) {
+//     sum += i;
+// }
+// alert(`Result of summing in this range: ${sum} `);
+
+// 4) Ask user two numbers and find greatest common divisor
+// let firstNum = Math.abs(+prompt('Enter first value'));
+// let secondNum = Math.abs(+prompt('Enter second value'));
+
+// if (firstNum == secondNum) {
+//     alert(`Greatest common divisor = ${firstNum}`);
+// } else if (firstNum < secondNum) {
+//     secondNum = firstNum % secondNum;
+//     alert(`Greatest common divisor = ${secondNum}`);
+// } else if (isNaN(firstNum) || isNaN(secondNum)) {
+//     alert('Enter correct values');
+// }
+
+
+// function oddEvenNumber(num) {
+//     const arr = String(num).split('');
+//     let odd = 0;
+//     let even = 0;
+//     arr.forEach(elem => {
+//         if (elem % 2 == 0) {
+//             even++;
+//          } else {
+//             odd++;
+//         }
+//         return odd, even;
+//     });
+//     return {odd, even};
+// }
+
+// oddEvenNumber(12356);
+
+let a = 10,
+    b = 20,
+    c = 30;
+    let resultOne = a++ - --b - c++;
+                // 10 - 20-1 - 30 = -39 
+                // a = 11, b = 19, c=31
+console.log(resultOne);
+let resultTwo = a + b++ - ++c;
+            // 11 + 19 - 32 = -2 
+            // a = 11, b = 20, c=32
+console.log(resultTwo);
+let resultThree= a++ - (--b - c++);
+            // 11 - (19 - 32) = 11 - -13 = 24 
+            // a =  12, b = 19, c=33
+console.log(resultThree);
