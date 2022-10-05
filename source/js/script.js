@@ -69,17 +69,17 @@
 let a = 10,
     b = 20,
     c = 30;
-    let resultOne = a++ - --b - c++;
-                // 10 - 20-1 - 30 = -39 
-                // a = 11, b = 19, c=31
+let resultOne = a++ - --b - c++;
+// 10 - 20-1 - 30 = -39 
+// a = 11, b = 19, c=31
 console.log(resultOne);
 let resultTwo = a + b++ - ++c;
-            // 11 + 19 - 32 = -2 
-            // a = 11, b = 20, c=32
+// 11 + 19 - 32 = -2 
+// a = 11, b = 20, c=32
 console.log(resultTwo);
-let resultThree= a++ - (--b - c++);
-            // 11 - (19 - 32) = 11 - -13 = 24 
-            // a =  12, b = 19, c=33
+let resultThree = a++ - (--b - c++);
+// 11 - (19 - 32) = 11 - -13 = 24 
+// a =  12, b = 19, c=33
 console.log(resultThree);
 
 // 2) Спросить у пользователя интервал чисел в пределах от 0 до 100, 
@@ -88,14 +88,14 @@ console.log(resultThree);
 
 const firstRangeValue = +prompt('Enter first value from 0 to 100');
 const secondRangeValue = +prompt('Enter second value from 0 to 100');
-if  (firstRangeValue < 0 || firstRangeValue > 100 ||
+if (firstRangeValue < 0 || firstRangeValue > 100 ||
     secondRangeValue < 0 || secondRangeValue > 100) {
     alert('Enter correct value from 0 to 100');
 } else if (isNaN(firstRangeValue) || isNaN(secondRangeValue)) {
     alert('You should enter number');
 } else {
-    for(let i = firstRangeValue; i<= secondRangeValue; i++) {
-        if((Math.pow(i, 2) % 3 !== 0)) {
+    for (let i = firstRangeValue; i <= secondRangeValue; i++) {
+        if ((Math.pow(i, 2) % 3 !== 0)) {
             continue;
         } else {
             console.log((Math.pow(i, 2) / 3));
@@ -110,7 +110,7 @@ if  (firstRangeValue < 0 || firstRangeValue > 100 ||
 // }
 
 let i = 0;
-while (i<= 8){
+while (i <= 8) {
     console.log(i);
     i++;
 }
@@ -119,13 +119,14 @@ while (i<= 8){
 // и вывести в консоль простые числа в указанном интервале.
 // Например  клиент ввёл 2 и 10 , в консоль должно вывести  2, 3, 5, 7
 
-const primeValueFirst = prompt('Enter first value from 1 to 30');
-const primeValueSecond = prompt('Enter second value  from 1 to 30');
+const primeValueFirst = prompt('Prime Numbers\nEnter first value from 1 to 30');
+const primeValueSecond = prompt('Prime Numbers\nEnter second value  from 1 to 30');
 
 if (primeValueFirst < 1 || primeValueFirst > 30 ||
     primeValueSecond < 1 || primeValueSecond > 30) {
     alert('Enter correct value from 1 to 30');
 } else {
+    console.log(`Prime numbers in range from ${primeValueFirst} to ${primeValueSecond}:`);
     for (let i = primeValueFirst; i <= primeValueSecond; i++) {
         let isPrime = true;
         for (let j = 2; j < i; j++) {
@@ -139,4 +140,3 @@ if (primeValueFirst < 1 || primeValueFirst > 30 ||
         }
     }
 }
-
